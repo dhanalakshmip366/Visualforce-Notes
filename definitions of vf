@@ -1,0 +1,114 @@
+
+ link-------https://developer.salesforce.com/docs/atlas.en-us.pages.meta/pages/pages_intro_what_is_it.htm
+
+Visualforce is a framework that allows developers to build custom user interfaces that can be hosted natively on Lightning Platform. 
+
+The Visualforce framework includes a tag-based markup language similar to HTML. 
+
+It also has a set of server-side “standard controllers” that make basic database operations, such as queries and saves, simple to perform.
+
+
+In the Visualforce markup language, each Visualforce tag corresponds to a coarse or fine-grained user interface component, such as page section, a related list, or a field. The behavior of Visualforce components can be controlled by the same logic that is used in standard Salesforce pages. Alternatively, developers can associate their own logic with a controller class written in Apex.
+
+What is a Visualforce Page?
+------------------------------------------
+Developers can use Visualforce to create a Visualforce page definition. A page definition consists of two primary elements:
+Visualforce markup
+A Visualforce controller
+
+
+Visualforce Markup
+Visualforce markup consists of Visualforce tags, HTML, JavaScript, or any other Web-enabled code embedded within a single <apex:page> tag. The markup defines the user interface components that are included on the page, and the way they appear.
+
+Visualforce Controllers
+A Visualforce controller is a set of instructions for what happens when a user interacts with components specified in associated Visualforce markup. One type of interaction is when a user clicks a button or link. Controllers also provide access to the data displayed in a page, and can modify component behavior.
+
+A developer can either use a standard controller provided by Lightning Platform, or add custom controller logic with a class written in Apex:
+A standard controller consists of the same functionality and logic that is used for a standard Salesforce page. For example, if you use the standard Accounts controller, clicking a Save button in a Visualforce page results in the same behavior as clicking Save on a standard Account edit page.
+If you use a standard controller on a page and the user doesn't have access to the object, the page displays an insufficient privileges error message. Resolve this error by checking the user's accessibility for an object and displaying components appropriately.
+
+A standard list controller enables you to create Visualforce pages that can display or act on a set of records. Examples of existing Salesforce pages that work with a set of records include list pages, related lists, and mass action pages.
+A custom controller is a class written in Apex that implements all of a page's logic, without leveraging a standard controller. If you use a custom controller, you can define new navigation elements or behaviors, but you must also reimplement any functionality that was already provided in a standard controller.
+Like other Apex classes, custom controllers execute entirely in system mode, in which the object and field-level permissions of the current user are ignored. You can specify whether a user can execute methods in a custom controller based on the user's profile.
+
+A controller extension is a class written in Apex that adds to or overrides behavior in a standard or custom controller. Extensions allow you to use the functionality of another controller while adding your own custom logic.
+Standard controllers execute in user mode, in which the permissions, field-level security, and sharing rules of the current user are enforced. Extending a standard controller allows you to build a Visualforce page that respects user permissions. Although the extension class executes in system mode, the standard controller executes in user mode. As with custom controllers, you can specify whether a user can execute methods in a controller extension based on the user's profile.
+
+Note
+
+Custom controllers and controller extension classes execute in system mode, so they ignore user permissions and field-level security. However, you can choose whether they respect a user's organization-wide defaults, role hierarchy, and sharing rules by using the with sharing keywords in the class definition. For information, see “Using the with sharing, without sharing, and inherited sharing Keywords” in the Apex Developer Guide.
+
+Where Can Visualforce Pages Be Used?
+----------------------------------------------------------------
+Developers can use Visualforce pages to:
+Override standard buttons, such as the New button for accounts, or the Edit button for contacts
+Override tab overview pages, such as the Accounts tab home page
+Define custom tabs
+Embed components in detail page layouts
+Create dashboard components or custom help pages
+Customize, extend, or integrate the sidebars in the Salesforce console (custom console components)
+Add navigation menu items and actions in the Salesforce mobile app
+
+
+Visual force
+---------------------
+visualforce is a web development framework that enables developers to build sophisticated, custom user interfaces for mobile and desktop apps that can be hosted on the Lightning Platform
+
+is a component based(means inbuilt tags) user interface  framework for the force.com platform.
+The framework includes  a tag-based markup language ,similar to html.similarly we have visual force tags.
+
+when we shd use visual force ?
+--------------------------------------
+you can ovverride the standard salesforce pages with visualforce page.
+create your own flow control through an application.
+
+
+
+Advantges of visualforce
+------------------------------------
+
+1) visualforce is model view controller(mvc) development style -(means  developer can work on the controller side,which is basically the business logic using apex and then visual force)
+2) visualforce editor panel is present for every visualforce page.
+3) visual has huge number of components.
+4) can be integrated with HTML,CSS,Ajax,Jquery.
+5) Visualforce is flexible and customizable woth web technologies.
+
+How to I enable visualforce developer mode?
+-------------------------------------------
+
+create one org from devloper.salesforce.com
+
+go to this url  https://developer.salesforce.com/signup( fill the form u will receive an mail then there u reset ur password and you can use this org)
+
+To easily log in later, save this URL:
+https://dgb0000014ldp2am-dev-ed.develop.my.salesforce.com
+
+
+email-dhanalakshmip366@gmail.com
+
+To easily log in later, save this URL:
+
+ 
+Username:
+
+password - 
+
+
+
+-------------------------------------------------
+click on user information
+switch to salesforce classic
+
+
+
+
+
+
+
+
+
+
+
+
+
+
